@@ -7,7 +7,8 @@ $ pip install dummipy
 ```
 
 Let it out of the box...
-```
+
+```python
 from sklearn.linear_model import LinearRegression
 from dummipy import cereal
 
@@ -32,7 +33,7 @@ $ pip install dummipy
 ## Use
 Just use it like any old data frame. That's really all there is to it.
 
-```
+```python
 import dummipy as dp
 
 df = dp.CategoricalDataFrame({
