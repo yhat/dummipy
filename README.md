@@ -16,14 +16,13 @@ type(cereal)
 
 cereal.head()
 reg = LinearRegression()
-reg.fit(cdf[['mfr', 'vitamins', 'fat']], cdf.calories)
+reg.fit(cereal[['mfr', 'vitamins', 'fat']], cereal.calories)
 ```
 
 ## Installation
-You'll need [`pandas`](), but any old version will do the 
-trick. There is no `pandas` version pegged in the `setup.py`
-file so installing `dummipy` won't mess up your existing sci-py
-setup.
+You'll need [`pandas`](http://pandas.pydata.org/), but any old version will do 
+the trick. There is no `pandas` version pegged in the `setup.py` file so 
+installing `dummipy` won't mess up your existing sci-py setup.
 
 ```bash
 $ pip install dummipy
@@ -31,8 +30,7 @@ $ pip install dummipy
 
 
 ## Use
-Just use it like any old data frame. That's really all there is
-to it.
+Just use it like any old data frame. That's really all there is to it.
 
 ```
 import dummipy as dp
