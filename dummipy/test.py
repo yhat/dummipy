@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import RidgeCV
 
-from catpy import CategoricalDataFrame
+from dummipy import CategoricalDataFrame
 
 regular_df = pd.DataFrame({
     "a": np.random.choice(["a", "b", "c"], 100),

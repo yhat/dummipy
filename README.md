@@ -1,15 +1,15 @@
-# catpy
+# dummipy
 
 ## Quickstart
 
 ```bash
-$ pip install catpy
+$ pip install dummipy
 ```
 
 Let it out of the box...
 ```
 from sklearn.linear_model import LinearRegression
-from catpy import cereal
+from dummipy import cereal
 
 type(cereal)
 # CategoricalDataFrame
@@ -22,11 +22,11 @@ reg.fit(cdf[['mfr', 'vitamins', 'fat']], cdf.calories)
 ## Installation
 You'll need [`pandas`](), but any old version will do the 
 trick. There is no `pandas` version pegged in the `setup.py`
-file so installing `catpy` won't mess up your existing sci-py
+file so installing `dummipy` won't mess up your existing sci-py
 setup.
 
 ```bash
-$ pip install catpy
+$ pip install dummipy
 ```
 
 
@@ -35,14 +35,14 @@ Just use it like any old data frame. That's really all there is
 to it.
 
 ```
-import catpy as cp
+import dummipy as dp
 
-df = cp.CategoricalDataFrame({
+df = dp.CategoricalDataFrame({
     "x": range(5),
     "y": ["a", "b", "c", "a", "b"]
 })
 
 
 df = pd.read_csv("foo.csv")
-cat_df = cp.CategoricalDataFrame(df)
+df = dp.CategoricalDataFrame(df)
 ```

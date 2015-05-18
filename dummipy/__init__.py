@@ -1,4 +1,4 @@
-from .catpy import CategoricalDataFrame
+from .dummipy import CategoricalDataFrame
 import pandas
 pandas.cDataFrame = CategoricalDataFrame
 import os
